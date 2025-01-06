@@ -297,15 +297,15 @@ const Index = () => {
                     {/* Tabs Header */}
                     <div className="flex flex-col items-center mt-10">
                         {/* Tabs Header */}
-                        <div className="flex rounded-lg bg-white">
+                        <div className="flex rounded-lg ">
                             <button
-                                className={`py-2 px-4 text-lg ${activeTab === 1 ? "bg-blue-500 text-white" : "bg-gray-200 text-black"}`}
+                                className={`py-2 px-4 text-lg ${activeTab === 1 ? " text-white" : " text-black"}`}
                                 onClick={() => setActiveTab(1)}
                             >
                                 Tab 1
                             </button>
                             <button
-                                className={`py-2 px-4 text-lg ${activeTab === 2 ? "bg-blue-500 text-white" : "bg-gray-200 text-black"}`}
+                                className={`py-2 px-4 text-lg ${activeTab === 2 ? " text-black" : " text-white"}`}
                                 onClick={() => setActiveTab(2)}
                             >
                                 Tab 2
@@ -314,8 +314,8 @@ const Index = () => {
 
                         {/* Tabs Content */}
                         <div className="mt-4">
-                            {activeTab === 1 && <div className="p-4 text-black">Content for Tab 1</div>}
-                            {activeTab === 2 && <div className="p-4 text-black">Content for Tab 2</div>}
+                            {activeTab === 1 && <div className="p-4 text-white">Content for Tab 1</div>}
+                            {activeTab === 2 && <div className="p-4 text-white">Content for Tab 2</div>}
                         </div>
                     </div>
 

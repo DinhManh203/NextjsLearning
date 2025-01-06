@@ -6,7 +6,7 @@ import Image from 'next/image';
 
 const navbarHeader = () => {
     return (
-        <footer className="bg-white dark:bg-gray-900">
+        <footer className="bg-white dark:bg-gray-900" style={{ fontFamily: 'Noto Sans' }}>
             <div className="mx-auto w-full max-w-screen-xl">
                 <div className="grid grid-cols-2 gap-[80px] px-4 py-6 lg:py-8 md:grid-cols-4">
                     {/* cột 1 */}
@@ -46,36 +46,36 @@ const navbarHeader = () => {
                                 </a>
                             </li>
                             <li className="mb-2">
-                                <a href="#" className="font-bold">
+                                <p className="font-bold" >
                                     Địa chỉ: <span className="font-normal text-[14px]">Tầng 5 V1 The Terra An Hưng - La Khê - Hà Đông - Hà Nội</span>
-                                </a>
+                                </p>
                             </li>
                             <li className="mb-2">
-                                <a href="#" className="font-bold">
+                                <p className="font-bold">
                                     Hotline: <span className="font-normal text-[14px]">0343 488 603</span>
-                                </a>
+                                </p>
                             </li>
                             <li className="mb-2">
-                                <a href="#" className="font-bold">
+                                <p className="font-bold">
                                     Email: <span className="font-normal text-[14px]">hello@mediax.com.vn</span>
-                                </a>
+                                </p>
                             </li>
                         </ul>
                     </div>
 
                     {/* cột 2 */}
                     <div >
-                        <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
+                        <h2 className="mb-6 text-gray-900  dark:text-white" style={{ fontFamily: 'Noto Sans', fontSize: '14px', fontWeight: '600' }}>
                             Giải pháp
                         </h2>
                         <ul className="text-[#646466] dark:text-gray-400 font-medium">
                             <li className="mb-2">
-                                <a href="#" className="">
+                                <a href="#" className="text-[14px]">
                                     Đội ngũ nhân sự số
                                 </a>
                             </li>
                             <li className="mb-2">
-                                <a href="#" className="">
+                                <a href="#" className="text-[14px]">
                                     Nâng cao trải nghiệm khách hàng
                                 </a>
                             </li>
@@ -84,37 +84,37 @@ const navbarHeader = () => {
 
                     {/* cột 3 */}
                     <div className="">
-                        <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
+                        <h2 className="mb-6 text-gray-900 dark:text-white" style={{ fontFamily: 'Noto Sans', fontSize: '14px', fontWeight: '600' }}>
                             Ứng dụng
                         </h2>
                         <ul className="text-[#646466] dark:text-gray-400 font-medium">
                             <li className="mb-2">
-                                <a href="#" className="">
+                                <a href="#" className="text-[14px]">
                                     Trợ lý ảo A.I
                                 </a>
                             </li>
                             <li className="mb-2">
-                                <a href="#" className="">
+                                <a href="#" className="text-[14px]">
                                     Quản trị tri thức doanh nghiệp
                                 </a>
                             </li>
                             <li className="mb-2">
-                                <a href="#" className="">
+                                <a href="#" className="text-[14px]">
                                     Phát triển chất lượng nhân sự
                                 </a>
                             </li>
                             <li className="mb-2">
-                                <a href="#" className="">
+                                <a href="#" className="text-[14px]">
                                     Dịch vụ khách hàng
                                 </a>
                             </li>
                             <li className="mb-2">
-                                <a href="#" className="">
+                                <a href="#" className="text-[14px]">
                                     Quản trị trải nghiệm khách hàng
                                 </a>
                             </li>
                             <li className="mb-2">
-                                <a href="#" className="">
+                                <a href="#" className="text-[14px]">
                                     Chăm sóc khách hàng
                                 </a>
                             </li>
@@ -122,18 +122,18 @@ const navbarHeader = () => {
                     </div>
 
                     <div className="">
-                        <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
-                        Công ty
+                        <h2 className="mb-6 text-gray-900 dark:text-white" style={{ fontFamily: 'Noto Sans', fontSize: '14px', fontWeight: '600' }}>
+                            Công ty
                         </h2>
                         <ul className="text-[#646466] dark:text-gray-400 font-medium">
-                            <li className="mb-4">
-                                <a href="#" className="">
-                                Về chúng tôi
+                            <li className="mb-2">
+                                <a href="#" className="text-[14px]">
+                                    Về chúng tôi
                                 </a>
                             </li>
-                            <li className="mb-4">
-                                <a href="#" className="">
-                                Liên hệ
+                            <li className="mb-2">
+                                <a href="#" className="text-[14px]">
+                                    Liên hệ
                                 </a>
                             </li>
                         </ul>
