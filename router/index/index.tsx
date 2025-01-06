@@ -12,6 +12,10 @@ import Pic2 from '@/public/pic_2.png'
 import Pic3 from '@/public/pic_3.png'
 import Pic4 from '@/public/pic_4.png'
 
+import BgCard from '@/public/bg_card.png'
+import BgCard2 from '@/public/bg_card_2.png'
+import PicCardLong from '@/public/cardLong.jpg'
+
 const Index = () => {
     const [activeTab, setActiveTab] = useState(1);
 
@@ -285,7 +289,7 @@ const Index = () => {
             </div>
 
             {/* section 3 */}
-            <div style={{ backgroundColor: '#101011', padding: '120px 142px', }}>
+            <div style={{ backgroundColor: '#101011', padding: '142px 120px', }}>
                 <div className='flex flex-col justify-center items-center text-center' style={{ marginBottom: '5rem', padding: '24px 270px', }}>
                     <h3 className='' style={{ fontSize: '48px', fontFamily: 'Noto Sans', fontWeight: '600', color: '#fff' }}> Giải pháp</h3>
                     <h3 className='' style={{ fontSize: '48px', fontFamily: 'Noto Sans', fontWeight: '600', color: '#fff' }}> chuyển đổi số toàn diện</h3>
@@ -297,28 +301,320 @@ const Index = () => {
                     {/* Tabs Header */}
                     <div className="flex flex-col items-center mt-10">
                         {/* Tabs Header */}
-                        <div className="flex rounded-lg ">
+                        <div className="flex gap-[18px]">
                             <button
-                                className={`py-2 px-4 text-lg ${activeTab === 1 ? " text-white" : " text-black"}`}
+                                className={`text-lg hover:bg-white hover:text-black ${activeTab === 1 ? " text-white" : " text-white"}`}
                                 onClick={() => setActiveTab(1)}
+                                style={{ borderRadius: '100px', fontFamily: 'Noto Sans', fontSize: '15px', fontWeight: '600', padding: '8px 24px' }}
                             >
-                                Tab 1
+                                Đội ngũ nhân sự số
                             </button>
                             <button
-                                className={`py-2 px-4 text-lg ${activeTab === 2 ? " text-black" : " text-white"}`}
+                                className={`py-2 px-4 text-lg hover:bg-white hover:text-black ${activeTab === 2 ? " text-white" : " text-white"}`}
                                 onClick={() => setActiveTab(2)}
+                                style={{ borderRadius: '100px', fontFamily: 'Noto Sans', fontSize: '15px', fontWeight: '600', padding: '8px 24px' }}
                             >
-                                Tab 2
+                                Nâng cao trải nghiệm khách hàng
+                            </button>
+                        </div>
+
+                        <div className='p-5 flex flex-col justify-center text-center'>
+                            <span className='text-white' style={{ fontSize: '20px', fontFamily: 'Noto Sans', fontWeight: '500', lineHeight: '25px', color: '#fff' }}>
+                                Tối ưu sức mạnh hiệu suất nhờ kết hợp nguồn lực con người và trí tuệ
+                            </span>
+                            <span className='text-white' style={{ fontSize: '20px', fontFamily: 'Noto Sans', fontWeight: '500', lineHeight: '25px', color: '#fff' }}>
+                                nhân tạo
+                            </span>
+
+                            <button>
+
                             </button>
                         </div>
 
                         {/* Tabs Content */}
                         <div className="mt-4">
-                            {activeTab === 1 && <div className="p-4 text-white">Content for Tab 1</div>}
-                            {activeTab === 2 && <div className="p-4 text-white">Content for Tab 2</div>}
+                            {activeTab === 1 &&
+                                <div className="p-4 text-white">
+
+                                    <div className="flex flex-row">
+                                        <div className="flex flex-col justify-around" style={{
+                                            marginRight: '24px'
+                                        }}>
+                                            <div style={{
+                                                height: '340px',
+                                                borderRadius: '40px',
+                                                border: '2px solid #1F2634',
+                                                background: '#171824',
+                                                display: 'flex',
+                                                justifyContent: 'center',
+                                                overflow: 'hidden',
+                                                position: 'relative'
+                                            }}>
+                                                <div>
+                                                    <Image
+                                                        src={BgCard}
+                                                        alt='BgCard'
+                                                        width={566}
+                                                        height={340}
+                                                        style={{
+                                                            objectFit: 'fill',
+                                                            transform: 'scale(1.25)',
+                                                            marginTop: '65px'
+                                                        }}
+                                                    />
+                                                    <span className='text-white' style={{
+                                                        position: 'absolute',
+                                                        top: '0',
+                                                        padding: '40px',
+                                                        fontSize: '17px',
+                                                        fontWeight: 500,
+                                                        fontFamily: "Noto Sans",
+                                                    }}>
+                                                        Xây dựng đội ngũ nhân lực số tập trung vào việc doanh nghiệp ươm mầm và duy trì văn hóa số, phát triển kỹ năng nhân viên, tăng cường gắn kết, áp dụng chính sách khuyến khích sự tham gia và thúc đẩy đổi mới sáng tạo giữa các phòng ban
+                                                    </span>
+                                                </div>
+
+                                            </div>
+
+                                            <div style={{
+                                                height: '393px',
+                                                borderRadius: '40px',
+                                                border: '2px solid #1F2634',
+                                                background: '#171824',
+                                                position: 'relative',
+                                                marginTop: '24px'
+                                            }}>
+                                                <div>
+                                                    <span className='text-white' style={{
+                                                        position: 'absolute',
+                                                        top: '0',
+                                                        padding: '40px',
+                                                        fontSize: '17px',
+                                                        fontWeight: 500,
+                                                        fontFamily: "Noto Sans",
+                                                    }}>
+                                                        Xây dựng đội ngũ nhân lực số tập trung vào việc doanh nghiệp ươm mầm và duy trì văn hóa số, phát triển kỹ năng nhân viên, tăng cường gắn kết, áp dụng chính sách khuyến khích sự tham gia và thúc đẩy đổi mới sáng tạo giữa các phòng ban
+                                                    </span>
+                                                </div>
+                                                <div className="flex flex-col justify-between"
+                                                    style={{
+                                                        padding: '200px 40px 40px 40px',
+                                                    }}>
+                                                    {/* dong 1 */}
+                                                    <div className="flex justify-between" style={{ paddingBottom: '16px', }}>
+                                                        <div className='flex'>
+                                                            <svg
+                                                                xmlns="http://www.w3.org/2000/svg"
+                                                                width={24}
+                                                                height={25}
+                                                                viewBox="0 0 24 25"
+                                                                fill="none"
+                                                                style={{
+                                                                    marginRight: '16px',
+                                                                }}
+                                                            >
+                                                                <mask
+                                                                    id="mask0_613_147191"
+                                                                    style={{ maskType: "alpha" }}
+                                                                    maskUnits="userSpaceOnUse"
+                                                                    x={0}
+                                                                    y={0}
+                                                                    width={24}
+                                                                    height={25}
+                                                                >
+                                                                    <rect y="0.833344" width={24} height={24} fill="#D9D9D9" />
+                                                                </mask>
+                                                                <g mask="url(#mask0_613_147191)">
+                                                                    <path
+                                                                        d="M5 21.8333C4.71667 21.8333 4.47917 21.7375 4.2875 21.5458C4.09583 21.3542 4 21.1167 4 20.8333V16.8333C4 16.2833 4.19583 15.8125 4.5875 15.4208C4.97917 15.0292 5.45 14.8333 6 14.8333H18C18.55 14.8333 19.0208 15.0292 19.4125 15.4208C19.8042 15.8125 20 16.2833 20 16.8333V20.8333C20 21.1167 19.9042 21.3542 19.7125 21.5458C19.5208 21.7375 19.2833 21.8333 19 21.8333H5ZM9 13.8333C7.61667 13.8333 6.4375 13.3458 5.4625 12.3708C4.4875 11.3958 4 10.2167 4 8.83334C4 7.45001 4.4875 6.27084 5.4625 5.29584C6.4375 4.32084 7.61667 3.83334 9 3.83334H15C16.3833 3.83334 17.5625 4.32084 18.5375 5.29584C19.5125 6.27084 20 7.45001 20 8.83334C20 10.2167 19.5125 11.3958 18.5375 12.3708C17.5625 13.3458 16.3833 13.8333 15 13.8333H9ZM6 19.8333H18V16.8333H6V19.8333ZM9 11.8333H15C15.8333 11.8333 16.5417 11.5417 17.125 10.9583C17.7083 10.375 18 9.66668 18 8.83334C18 8.00001 17.7083 7.29168 17.125 6.70834C16.5417 6.12501 15.8333 5.83334 15 5.83334H9C8.16667 5.83334 7.45833 6.12501 6.875 6.70834C6.29167 7.29168 6 8.00001 6 8.83334C6 9.66668 6.29167 10.375 6.875 10.9583C7.45833 11.5417 8.16667 11.8333 9 11.8333ZM9 9.83334C9.28333 9.83334 9.52083 9.73751 9.7125 9.54584C9.90417 9.35418 10 9.11668 10 8.83334C10 8.55001 9.90417 8.31251 9.7125 8.12084C9.52083 7.92918 9.28333 7.83334 9 7.83334C8.71667 7.83334 8.47917 7.92918 8.2875 8.12084C8.09583 8.31251 8 8.55001 8 8.83334C8 9.11668 8.09583 9.35418 8.2875 9.54584C8.47917 9.73751 8.71667 9.83334 9 9.83334ZM15 9.83334C15.2833 9.83334 15.5208 9.73751 15.7125 9.54584C15.9042 9.35418 16 9.11668 16 8.83334C16 8.55001 15.9042 8.31251 15.7125 8.12084C15.5208 7.92918 15.2833 7.83334 15 7.83334C14.7167 7.83334 14.4792 7.92918 14.2875 8.12084C14.0958 8.31251 14 8.55001 14 8.83334C14 9.11668 14.0958 9.35418 14.2875 9.54584C14.4792 9.73751 14.7167 9.83334 15 9.83334Z"
+                                                                        fill="#A0A0BD"
+                                                                    />
+                                                                </g>
+                                                            </svg>
+
+                                                            <span>
+                                                                Trợ lý ảo AI toàn diện
+                                                            </span>
+                                                        </div>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                                                            <path d="M6 6.83334V8.83334H14.59L5 18.4233L6.41 19.8333L16 10.2433V18.8333H18V6.83334H6Z" fill="#279FFF" />
+                                                        </svg>
+                                                    </div>
+
+                                                    <div style={{ border: '1px solid #383840', }}></div>
+
+                                                    {/* dong 2 */}
+                                                    <div className="flex justify-between" style={{ paddingBottom: '16px', paddingTop: '16px' }}>
+                                                        <div className='flex'>
+                                                            <svg
+                                                                xmlns="http://www.w3.org/2000/svg"
+                                                                width={24}
+                                                                height={25}
+                                                                viewBox="0 0 24 25"
+                                                                fill="none"
+                                                                style={{ marginRight: '16px' }}
+                                                            >
+                                                                <mask
+                                                                    id="mask0_613_147199"
+                                                                    style={{ maskType: "alpha" }}
+                                                                    maskUnits="userSpaceOnUse"
+                                                                    x={0}
+                                                                    y={0}
+                                                                    width={24}
+                                                                    height={25}
+                                                                >
+                                                                    <rect y="0.5" width={24} height={24} fill="#D9D9D9" />
+                                                                </mask>
+                                                                <g mask="url(#mask0_613_147199)">
+                                                                    <path
+                                                                        d="M10.85 14.25L10.95 15.05C10.9667 15.1833 11.0208 15.2917 11.1125 15.375C11.2042 15.4583 11.3167 15.5 11.45 15.5H12.55C12.6833 15.5 12.7958 15.4583 12.8875 15.375C12.9792 15.2917 13.0333 15.1833 13.05 15.05L13.15 14.25C13.2833 14.2 13.4042 14.1417 13.5125 14.075C13.6208 14.0083 13.7167 13.9333 13.8 13.85L14.55 14.175C14.6667 14.225 14.7833 14.2333 14.9 14.2C15.0167 14.1667 15.1083 14.0917 15.175 13.975L15.725 13.025C15.7917 12.9083 15.8125 12.7917 15.7875 12.675C15.7625 12.5583 15.7 12.4583 15.6 12.375L14.95 11.9C14.9833 11.7667 15 11.6333 15 11.5C15 11.3667 14.9833 11.2333 14.95 11.1L15.6 10.625C15.7 10.5417 15.7625 10.4417 15.7875 10.325C15.8125 10.2083 15.7917 10.0917 15.725 9.975L15.175 9.025C15.1083 8.90833 15.0167 8.83333 14.9 8.8C14.7833 8.76667 14.6667 8.775 14.55 8.825L13.8 9.15C13.7167 9.06667 13.6208 8.99167 13.5125 8.925C13.4042 8.85833 13.2833 8.8 13.15 8.75L13.05 7.95C13.0333 7.81667 12.9792 7.70833 12.8875 7.625C12.7958 7.54167 12.6833 7.5 12.55 7.5H11.45C11.3167 7.5 11.2042 7.54167 11.1125 7.625C11.0208 7.70833 10.9667 7.81667 10.95 7.95L10.85 8.75C10.7167 8.8 10.5958 8.85833 10.4875 8.925C10.3792 8.99167 10.2833 9.06667 10.2 9.15L9.45 8.825C9.33333 8.775 9.21667 8.76667 9.1 8.8C8.98333 8.83333 8.89167 8.90833 8.825 9.025L8.275 9.975C8.20833 10.0917 8.1875 10.2083 8.2125 10.325C8.2375 10.4417 8.3 10.5417 8.4 10.625L9.05 11.1C9.01667 11.2333 9 11.3667 9 11.5C9 11.6333 9.01667 11.7667 9.05 11.9L8.4 12.375C8.3 12.4583 8.2375 12.5583 8.2125 12.675C8.1875 12.7917 8.20833 12.9083 8.275 13.025L8.825 13.975C8.89167 14.0917 8.98333 14.1667 9.1 14.2C9.21667 14.2333 9.33333 14.225 9.45 14.175L10.2 13.85C10.2833 13.9333 10.3792 14.0083 10.4875 14.075C10.5958 14.1417 10.7167 14.2 10.85 14.25ZM12 13C11.5833 13 11.2292 12.8542 10.9375 12.5625C10.6458 12.2708 10.5 11.9167 10.5 11.5C10.5 11.0833 10.6458 10.7292 10.9375 10.4375C11.2292 10.1458 11.5833 10 12 10C12.4167 10 12.7708 10.1458 13.0625 10.4375C13.3542 10.7292 13.5 11.0833 13.5 11.5C13.5 11.9167 13.3542 12.2708 13.0625 12.5625C12.7708 12.8542 12.4167 13 12 13ZM6 18.2C5.05 17.3333 4.3125 16.3208 3.7875 15.1625C3.2625 14.0042 3 12.7833 3 11.5C3 9 3.875 6.875 5.625 5.125C7.375 3.375 9.5 2.5 12 2.5C14.0833 2.5 15.9292 3.1125 17.5375 4.3375C19.1458 5.5625 20.1917 7.15833 20.675 9.125L21.975 14.25C22.0583 14.5667 22 14.8542 21.8 15.1125C21.6 15.3708 21.3333 15.5 21 15.5H19V18.5C19 19.05 18.8042 19.5208 18.4125 19.9125C18.0208 20.3042 17.55 20.5 17 20.5H15V21.5C15 21.7833 14.9042 22.0208 14.7125 22.2125C14.5208 22.4042 14.2833 22.5 14 22.5C13.7167 22.5 13.4792 22.4042 13.2875 22.2125C13.0958 22.0208 13 21.7833 13 21.5V19.5C13 19.2167 13.0958 18.9792 13.2875 18.7875C13.4792 18.5958 13.7167 18.5 14 18.5H17V14.5C17 14.2167 17.0958 13.9792 17.2875 13.7875C17.4792 13.5958 17.7167 13.5 18 13.5H19.7L18.75 9.625C18.3667 8.10833 17.55 6.875 16.3 5.925C15.05 4.975 13.6167 4.5 12 4.5C10.0667 4.5 8.41667 5.175 7.05 6.525C5.68333 7.875 5 9.51667 5 11.45C5 12.45 5.20417 13.4 5.6125 14.3C6.02083 15.2 6.6 16 7.35 16.7L8 17.3V21.5C8 21.7833 7.90417 22.0208 7.7125 22.2125C7.52083 22.4042 7.28333 22.5 7 22.5C6.71667 22.5 6.47917 22.4042 6.2875 22.2125C6.09583 22.0208 6 21.7833 6 21.5V18.2Z"
+                                                                        fill="#A0A0BD"
+                                                                    />
+                                                                </g>
+                                                            </svg>
+
+                                                            <span>
+                                                                Nền tảng quản trị tri thức doanh nghiệp
+                                                            </span>
+                                                        </div>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                                                            <path d="M6 6.83334V8.83334H14.59L5 18.4233L6.41 19.8333L16 10.2433V18.8333H18V6.83334H6Z" fill="#279FFF" />
+                                                        </svg>
+                                                    </div>
+
+                                                    <div style={{ border: '1px solid #383840', }}></div>
+                                                    {/* dong 3 */}
+                                                    <div className="flex justify-between" style={{ paddingBottom: '16px', paddingTop: '16px' }}>
+                                                        <div className='flex'>
+                                                            <svg
+                                                                xmlns="http://www.w3.org/2000/svg"
+                                                                width={24}
+                                                                height={25}
+                                                                viewBox="0 0 24 25"
+                                                                fill="none"
+                                                                style={{ marginRight: '16px' }}
+                                                            >
+                                                                <mask
+                                                                    id="mask0_613_147207"
+                                                                    style={{ maskType: "alpha" }}
+                                                                    maskUnits="userSpaceOnUse"
+                                                                    x={0}
+                                                                    y={0}
+                                                                    width={24}
+                                                                    height={25}
+                                                                >
+                                                                    <rect y="0.166687" width={24} height={24} fill="#D9D9D9" />
+                                                                </mask>
+                                                                <g mask="url(#mask0_613_147207)">
+                                                                    <path
+                                                                        d="M2.70011 17.7917C2.50011 17.5917 2.40428 17.3542 2.41261 17.0792C2.42094 16.8042 2.51678 16.575 2.70011 16.3917L7.97511 11.0417C8.35844 10.6584 8.83344 10.4667 9.40011 10.4667C9.96678 10.4667 10.4418 10.6584 10.8251 11.0417L13.4001 13.6417L18.6001 8.4917H17.0001C16.7168 8.4917 16.4793 8.39587 16.2876 8.2042C16.0959 8.01253 16.0001 7.77503 16.0001 7.4917C16.0001 7.20837 16.0959 6.97087 16.2876 6.7792C16.4793 6.58753 16.7168 6.4917 17.0001 6.4917H21.0001C21.2834 6.4917 21.5209 6.58753 21.7126 6.7792C21.9043 6.97087 22.0001 7.20837 22.0001 7.4917V11.4917C22.0001 11.775 21.9043 12.0125 21.7126 12.2042C21.5209 12.3959 21.2834 12.4917 21.0001 12.4917C20.7168 12.4917 20.4793 12.3959 20.2876 12.2042C20.0959 12.0125 20.0001 11.775 20.0001 11.4917V9.8917L14.8251 15.0667C14.4418 15.45 13.9668 15.6417 13.4001 15.6417C12.8334 15.6417 12.3584 15.45 11.9751 15.0667L9.40011 12.4917L4.10011 17.7917C3.91678 17.975 3.68344 18.0667 3.40011 18.0667C3.11678 18.0667 2.88344 17.975 2.70011 17.7917Z"
+                                                                        fill="#A0A0BD"
+                                                                    />
+                                                                </g>
+                                                            </svg>
+
+                                                            <span>
+                                                                Trợ lý ảo AI toàn diện
+                                                            </span>
+                                                        </div>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                                                            <path d="M6 6.83334V8.83334H14.59L5 18.4233L6.41 19.8333L16 10.2433V18.8333H18V6.83334H6Z" fill="#279FFF" />
+                                                        </svg>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <div style={{
+                                            display: 'flex',
+                                            justifyContent: 'center',
+                                            overflow: 'hidden',
+                                            position: 'relative'
+                                        }}>
+                                            <div style={{
+                                                height: '757px',
+                                                borderRadius: '40px',
+                                                border: '2px solid #1F2634',
+                                                background: '#171824',
+                                            }}>
+                                                <Image
+                                                    src={PicCardLong}
+                                                    alt='BgCard'
+                                                    width={566}
+                                                    style={{
+                                                        borderRadius: '40px 40px 0px 0px',
+                                                    }}
+                                                />
+                                                <div style={{
+                                                    position: 'absolute',
+                                                    top: '30%',
+                                                    padding: '100px 40px',
+                                                }}>
+                                                    <span className='text-white' style={{
+                                                        fontSize: '17px',
+                                                        fontWeight: 500,
+                                                        fontFamily: "Noto Sans",
+                                                    }}>
+                                                        MediaX cung cấp bộ giải pháp AI hàng đầu thị trường về tăng cường trải nghiệm khách hàng
+                                                    </span>
+                                                    <div className="flex justify-between" style={{ paddingBottom: '16px', }}>
+                                                        <div className='flex'>
+                                                            <svg
+                                                                xmlns="http://www.w3.org/2000/svg"
+                                                                width={24}
+                                                                height={25}
+                                                                viewBox="0 0 24 25"
+                                                                fill="none"
+                                                                style={{
+                                                                    marginRight: '16px',
+                                                                }}
+                                                            >
+                                                                <mask
+                                                                    id="mask0_613_147191"
+                                                                    style={{ maskType: "alpha" }}
+                                                                    maskUnits="userSpaceOnUse"
+                                                                    x={0}
+                                                                    y={0}
+                                                                    width={24}
+                                                                    height={25}
+                                                                >
+                                                                    <rect y="0.833344" width={24} height={24} fill="#D9D9D9" />
+                                                                </mask>
+                                                                <g mask="url(#mask0_613_147191)">
+                                                                    <path
+                                                                        d="M5 21.8333C4.71667 21.8333 4.47917 21.7375 4.2875 21.5458C4.09583 21.3542 4 21.1167 4 20.8333V16.8333C4 16.2833 4.19583 15.8125 4.5875 15.4208C4.97917 15.0292 5.45 14.8333 6 14.8333H18C18.55 14.8333 19.0208 15.0292 19.4125 15.4208C19.8042 15.8125 20 16.2833 20 16.8333V20.8333C20 21.1167 19.9042 21.3542 19.7125 21.5458C19.5208 21.7375 19.2833 21.8333 19 21.8333H5ZM9 13.8333C7.61667 13.8333 6.4375 13.3458 5.4625 12.3708C4.4875 11.3958 4 10.2167 4 8.83334C4 7.45001 4.4875 6.27084 5.4625 5.29584C6.4375 4.32084 7.61667 3.83334 9 3.83334H15C16.3833 3.83334 17.5625 4.32084 18.5375 5.29584C19.5125 6.27084 20 7.45001 20 8.83334C20 10.2167 19.5125 11.3958 18.5375 12.3708C17.5625 13.3458 16.3833 13.8333 15 13.8333H9ZM6 19.8333H18V16.8333H6V19.8333ZM9 11.8333H15C15.8333 11.8333 16.5417 11.5417 17.125 10.9583C17.7083 10.375 18 9.66668 18 8.83334C18 8.00001 17.7083 7.29168 17.125 6.70834C16.5417 6.12501 15.8333 5.83334 15 5.83334H9C8.16667 5.83334 7.45833 6.12501 6.875 6.70834C6.29167 7.29168 6 8.00001 6 8.83334C6 9.66668 6.29167 10.375 6.875 10.9583C7.45833 11.5417 8.16667 11.8333 9 11.8333ZM9 9.83334C9.28333 9.83334 9.52083 9.73751 9.7125 9.54584C9.90417 9.35418 10 9.11668 10 8.83334C10 8.55001 9.90417 8.31251 9.7125 8.12084C9.52083 7.92918 9.28333 7.83334 9 7.83334C8.71667 7.83334 8.47917 7.92918 8.2875 8.12084C8.09583 8.31251 8 8.55001 8 8.83334C8 9.11668 8.09583 9.35418 8.2875 9.54584C8.47917 9.73751 8.71667 9.83334 9 9.83334ZM15 9.83334C15.2833 9.83334 15.5208 9.73751 15.7125 9.54584C15.9042 9.35418 16 9.11668 16 8.83334C16 8.55001 15.9042 8.31251 15.7125 8.12084C15.5208 7.92918 15.2833 7.83334 15 7.83334C14.7167 7.83334 14.4792 7.92918 14.2875 8.12084C14.0958 8.31251 14 8.55001 14 8.83334C14 9.11668 14.0958 9.35418 14.2875 9.54584C14.4792 9.73751 14.7167 9.83334 15 9.83334Z"
+                                                                        fill="#A0A0BD"
+                                                                    />
+                                                                </g>
+                                                            </svg>
+
+                                                            <span>
+                                                                Trợ lý ảo AI toàn diện
+                                                            </span>
+                                                        </div>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                                                            <path d="M6 6.83334V8.83334H14.59L5 18.4233L6.41 19.8333L16 10.2433V18.8333H18V6.83334H6Z" fill="#279FFF" />
+                                                        </svg>
+                                                    </div>
+                                                </div>
+
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            }
+                            {activeTab === 2 &&
+                                <div className="p-4 text-white">
+                                    Content for Tab 2
+                                </div>
+                            }
                         </div>
                     </div>
-
                 </div>
 
             </div>
