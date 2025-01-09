@@ -48,7 +48,7 @@ const navbarHeader = () => {
                         <li className=''>
                             <div className='group'>
                                 <button className='text-slate-500 hover:text-black transition border-b-2 border-white hover:border-black cursor-pointer'>Giải pháp</button>
-                                <div className='hidden group-hover:flex flex-col absolute top-[35px] left-0 p-10 px-20 pl-[8.7rem] w-full bg-white z-20 text-black duration-300 mb-10 mt-3'>
+                                <div className='hidden group-hover:flex flex-col absolute top-[36px] left-0 p-10 px-20 pl-[8.7rem] w-full bg-white z-20 text-black duration-300 mb-10 mt-3'>
                                     <div className='grid grid-cols-2 md:grid-cols-2 gap-5'>
                                         <div className='flex flex-col'>
                                             <h3 className='font-sans text-[14px] text-[#A3A3A3]'>Media Giải pháp</h3>
@@ -138,7 +138,7 @@ const navbarHeader = () => {
                         <li className=''>
                             <div className='group'>
                                 <button className='text-slate-500 hover:text-black transition border-b-2 border-white hover:border-black cursor-pointer'>Công ty</button>
-                                <div className='hidden group-hover:flex flex-col absolute top-[35px] left-0 p-10 px-20 pl-[8.7rem] w-full bg-white z-20 text-black duration-300 mb-10 mt-3'>
+                                <div className='hidden group-hover:flex flex-col absolute top-[36px] left-0 p-10 px-20 pl-[8.7rem] w-full bg-white z-20 text-black duration-300 mb-10 mt-3'>
                                     <div className='grid grid-cols-2 md:grid-cols-2 gap-5'>
                                         <div className='flex flex-col'>
                                             <h3 className='font-sans text-[14px] text-[#A3A3A3]'>Công ty chúng tôi</h3>

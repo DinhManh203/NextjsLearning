@@ -7,8 +7,8 @@ import Image from 'next/image';
 const navbarHeader = () => {
     return (
         <footer className="bg-white dark:bg-gray-900" style={{ fontFamily: 'Noto Sans' }}>
-            <div className="mx-auto w-full max-w-screen-xl">
-                <div className="grid grid-cols-2 gap-[80px] px-4 py-6 lg:py-8 md:grid-cols-4">
+            <div className="mx-auto w-full max-w-screen-xl flex start-0">
+                <div className="grid grid-cols-2 gap-[80px] lg:py-8 md:grid-cols-4" style={{ paddingLeft: '3.75rem', paddingRight: '3.75rem'}}>
                     {/* cột 1 */}
                     <div className="">
                         <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
@@ -83,7 +83,7 @@ const navbarHeader = () => {
                     </div>
 
                     {/* cột 3 */}
-                    <div className="">
+                    <div className="justify-self-end">
                         <h2 className="mb-6 text-gray-900 dark:text-white" style={{ fontFamily: 'Noto Sans', fontSize: '14px', fontWeight: '600' }}>
                             Ứng dụng
                         </h2>
@@ -121,7 +121,8 @@ const navbarHeader = () => {
                         </ul>
                     </div>
 
-                    <div className="">
+                    {/* cột 4 */}
+                    <div className="justify-self-center">
                         <h2 className="mb-6 text-gray-900 dark:text-white" style={{ fontFamily: 'Noto Sans', fontSize: '14px', fontWeight: '600' }}>
                             Công ty
                         </h2>
