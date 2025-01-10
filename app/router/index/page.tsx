@@ -3,6 +3,7 @@
 import React from 'react'
 import Image from 'next/image';
 import HomePage from '@/public/home-page.png';
+import Link from 'next/link';
 import { Tabs, TabList, Tab, TabPanel } from 'react-tabs';
 import { useState } from 'react'
 import 'react-tabs/style/react-tabs.css';
@@ -66,7 +67,10 @@ const Index = () => {
                         fontFamily: 'Noto Sans',
                         fontWeight: '600'
                     }}>
-                        <a href="#">Tìm hiểu thêm</a>
+                        <Link href="/digital_human">
+                            Tìm hiểu thêm
+                        </Link>
+
                     </button>
                 </div>
             </div>
@@ -752,8 +756,8 @@ const Index = () => {
                                                         height={340}
                                                         style={{
                                                             objectFit: 'fill',
-                                                            transform: 'scale(1.2)',
-                                                            marginTop: '95px'
+                                                            transform: 'scale(1.1)',
+                                                            marginTop: '85px'
                                                         }}
                                                     />
                                                     <span className='text-white' style={{
@@ -1119,8 +1123,8 @@ const Index = () => {
 
                 <div className='grid grid-cols-4 gap-4 grid-flow-row' style={{ paddingLeft: '40px', paddingRight: '40px' }}>
 
-                    <div className='items-center bg-slate-400' style={{ marginRight: '24px', }}>
-                        <div className='flex flex-col shadow shadow-black' style={{ padding: '40px', backgroundColor: '#fff', borderRadius: '40px', height: 'auto' }}>
+                    <div className='items-center ' style={{ marginRight: '24px', }}>
+                        <div className='flex flex-col shadow' style={{ padding: '40px', backgroundColor: '#fff', borderRadius: '40px', height: '318px', lineHeight: '25px', letterSpacing: '-0.25%' }}>
 
                             {/* ảnh svg  */}
                             <div>
@@ -1162,8 +1166,8 @@ const Index = () => {
                         </div>
                     </div>
 
-                    <div className='items-center bg-slate-400' style={{ marginRight: '24px', }}>
-                        <div className='flex flex-col shadow shadow-black' style={{ padding: '40px', backgroundColor: '#fff', borderRadius: '40px', height: 'auto' }}>
+                    <div className='items-center' style={{ marginRight: '24px', }}>
+                        <div className='flex flex-col shadow' style={{ padding: '40px', backgroundColor: '#fff', borderRadius: '40px', height: '318px', lineHeight: '25px', letterSpacing: '-0.25%' }}>
 
                             {/* ảnh svg  */}
                             <div>
@@ -1233,8 +1237,8 @@ const Index = () => {
                         </div>
                     </div>
 
-                    <div className='items-center bg-slate-400' style={{ marginRight: '24px' }}>
-                        <div className='flex flex-col shadow shadow-black' style={{ padding: '40px', backgroundColor: '#fff', borderRadius: '40px', height: 'auto' }}>
+                    <div className='items-center' style={{ marginRight: '24px' }}>
+                        <div className='flex flex-col shadow' style={{ padding: '40px', backgroundColor: '#fff', borderRadius: '40px', height: '318px', lineHeight: '25px', letterSpacing: '-0.25%' }}>
 
                             {/* ảnh svg  */}
                             <div>
@@ -1302,8 +1306,8 @@ const Index = () => {
                         </div>
                     </div>
 
-                    <div className='items-center bg-slate-400' style={{ marginRight: '24px' }}>
-                        <div className='flex flex-col shadow shadow-black' style={{ padding: '40px', backgroundColor: '#fff', borderRadius: '40px', height: 'auto' }}>
+                    <div className='items-center ' style={{ marginRight: '24px' }}>
+                        <div className='flex flex-col shadow ' style={{ padding: '40px', backgroundColor: '#fff', borderRadius: '40px', height: '318px', lineHeight: '25px', letterSpacing: '-0.25%' }}>
 
                             {/* ảnh svg  */}
                             <div>

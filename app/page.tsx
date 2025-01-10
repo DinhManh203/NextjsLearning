@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Index from "@/router/index"
+import Index from "@/app/router/index/page"
 import { Noto_Sans } from 'next/font/google';
 
 const notoSans = Noto_Sans({
