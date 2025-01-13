@@ -75,7 +75,7 @@ const Index = () => {
                             </div>
 
                             {/* noi dung  */}
-                            <div style={{ padding: '133px 83px', }}>
+                            <div className='px-[83px] py-[133px]'>
                                 <div className='flex flex-col justify-center items-center'>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="56" height="48" viewBox="0 0 56 48" fill="none">
                                         <g clipPath="url(#clip0_613_147136)">
@@ -110,7 +110,7 @@ const Index = () => {
                         <div className='flex flex-row grid grid-cols-2 justify-center items-center'>
 
                             {/* noi dung  */}
-                            <div className='px-[133px] py-[83px]' style={{ padding: '133px 83px', }}>
+                            <div className='px-[83px] py-[133px]'>
                                 <div className='flex flex-col justify-center items-center'>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="44" height="48" viewBox="0 0 44 48" fill="none">
                                         <g clipPath="url(#clip0_613_147144)">
@@ -177,7 +177,7 @@ const Index = () => {
                             </div>
 
                             {/* noi dung  */}
-                            <div style={{ padding: '133px 83px', }}>
+                            <div className='px-[83px] py-[133px]'>
                                 <div className='flex flex-col justify-center items-center'>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="65" height="48" viewBox="0 0 65 48" fill="none">
                                         <g clipPath="url(#clip0_613_147155)">
@@ -215,7 +215,7 @@ const Index = () => {
                         <div className='flex flex-row grid grid-cols-2 justify-center items-center'>
 
                             {/* noi dung  */}
-                            <div style={{ padding: '133px 83px', }}>
+                            <div className='px-[83px] py-[133px]'>
                                 <div className='flex flex-col justify-center items-center'>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="58" height="48" viewBox="0 0 58 48" fill="none">
                                         <g clipPath="url(#clip0_613_147164)">
@@ -653,18 +653,9 @@ const Index = () => {
                             {activeTab === 2 &&
                                 <div className="p-4 text-white">
                                     <div className="flex flex-row">
-                                        <div className="flex flex-col justify-around" style={{
-                                            marginRight: '24px'
-                                        }}>
-                                            <div style={{
-                                                height: '340px',
+                                        <div className="flex flex-col justify-around mr-[24px]">
+                                            <div className='flex overflow-hidden relative justify-center h-[340px] border-[2px] border-[#1F2634] bg-[#171824]' style={{
                                                 borderRadius: '40px',
-                                                border: '2px solid #1F2634',
-                                                background: '#171824',
-                                                display: 'flex',
-                                                justifyContent: 'center',
-                                                overflow: 'hidden',
-                                                position: 'relative'
                                             }}>
                                                 <div>
                                                     <Image
@@ -678,37 +669,18 @@ const Index = () => {
                                                             marginTop: '85px'
                                                         }}
                                                     />
-                                                    <span className='text-white' style={{
-                                                        position: 'absolute',
-                                                        top: '0',
-                                                        padding: '40px',
-                                                        fontSize: '17px',
-                                                        fontWeight: 500,
-                                                        fontFamily: "Noto Sans",
-                                                    }}>
+                                                    <span className='text-white absolute top-0 text-[17px] font-[500] p-[40px]'>
                                                         Ứng dụng trải nghiệm khách hàng sử dụng AI để hiểu và đáp ứng nhu cầu khách hàng nhanh chóng, chính xác. AI giúp cá nhân hóa đề xuất, tự động hỗ trợ, và phân tích phản hồi, mang lại trải nghiệm liền mạch, gia tăng sự hài lòng và gắn kết khách hàng với thương hiệu.
                                                     </span>
                                                 </div>
 
                                             </div>
 
-                                            <div style={{
-                                                height: '393px',
-                                                borderRadius: '40px',
-                                                border: '2px solid #1F2634',
-                                                background: '#171824',
-                                                position: 'relative',
-                                                marginTop: '24px'
+                                            <div className='relative mt-[24px] h-[393px] border-[2px] border-[#1F2634] bg-[#171824]' style={{ 
+                                                borderRadius: '40px'
                                             }}>
                                                 <div>
-                                                    <span className='text-white' style={{
-                                                        position: 'absolute',
-                                                        top: '0',
-                                                        padding: '40px',
-                                                        fontSize: '17px',
-                                                        fontWeight: 500,
-                                                        fontFamily: "Noto Sans",
-                                                    }}>
+                                                    <span className='absolute top-0 p-[40px] text-[17px] font-[500] text-white'>
                                                         Ứng dụng trải nghiệm khách hàng sử dụng AI để cá nhân hóa, tự động hỗ trợ và phân tích phản hồi, giúp doanh nghiệp nâng cao sự hài lòng và gắn kết khách hàng với thương hiệu.
                                                     </span>
                                                 </div>
@@ -717,7 +689,7 @@ const Index = () => {
                                                         padding: '200px 40px 40px 40px',
                                                     }}>
                                                     {/* dong 1 */}
-                                                    <div className="flex justify-between" style={{ paddingBottom: '16px', }}>
+                                                    <div className="flex justify-between pb-[16px]">
                                                         <div className='flex'>
                                                             <svg
                                                                 xmlns="http://www.w3.org/2000/svg"
@@ -746,7 +718,6 @@ const Index = () => {
                                                                 </g>
                                                             </svg>
 
-
                                                             <span>
                                                                 Dịch vụ khách hàng
                                                             </span>
@@ -756,10 +727,10 @@ const Index = () => {
                                                         </svg>
                                                     </div>
 
-                                                    <div style={{ border: '1px solid #383840', }}></div>
+                                                    <div className='border-[1px] border-[#383840]'></div>
 
                                                     {/* dong 2 */}
-                                                    <div className="flex justify-between" style={{ paddingBottom: '16px', paddingTop: '16px' }}>
+                                                    <div className="flex justify-between pb-[16px] pt-[16px]">
                                                         <div className='flex'>
                                                             <svg
                                                                 xmlns="http://www.w3.org/2000/svg"
@@ -798,9 +769,9 @@ const Index = () => {
                                                         </svg>
                                                     </div>
 
-                                                    <div style={{ border: '1px solid #383840', }}></div>
+                                                    <div className='border-[1px] border-[#383840]'></div>
                                                     {/* dong 3 */}
-                                                    <div className="flex justify-between" style={{ paddingBottom: '16px', paddingTop: '16px' }}>
+                                                    <div className="flex justify-between pb-[16px] pt-[16px]">
                                                         <div className='flex'>
                                                             <svg
                                                                 xmlns="http://www.w3.org/2000/svg"
@@ -844,17 +815,9 @@ const Index = () => {
                                         </div>
 
                                         {/* Cot dai*/}
-                                        <div className='' style={{
-                                            display: 'flex',
-                                            justifyContent: 'center',
-                                            overflow: 'hidden',
-                                            position: 'relative'
-                                        }}>
-                                            <div style={{
-                                                height: '757px',
+                                        <div className='flex justify-center overflow-hidden relative'>
+                                            <div className='h-[757px] border-[2px] border-[#1F2634] bg-[#171824]' style={{
                                                 borderRadius: '40px',
-                                                border: '2px solid #1F2634',
-                                                background: '#171824',
                                             }}>
                                                 <Image
                                                     src={"/cardLong2.jpg"}
@@ -865,19 +828,11 @@ const Index = () => {
                                                         borderRadius: '40px 40px 0px 0px',
                                                     }}
                                                 />
-                                                <div style={{
-                                                    position: 'absolute',
-                                                    top: '30%',
-                                                    padding: '70px 40px',
-                                                }}>
-                                                    <span className='text-white' style={{
-                                                        fontSize: '17px',
-                                                        fontWeight: 500,
-                                                        fontFamily: "Noto Sans",
-                                                    }}>
+                                                <div className='absolute top-[30%] py-[70px] px-[40px]'>
+                                                    <span className='text-white text-[17px] font-[500]'>
                                                         MediaX cung cấp bộ giải pháp AI hàng đầu thị trường để mang lại trải nghiệm chăm sóc khách hàng chủ động trên quy mô lớn
                                                     </span>
-                                                    <div className="flex justify-between" style={{ marginTop: '40px' }}>
+                                                    <div className="flex justify-between mt-[40px]">
                                                         <div className='flex'>
                                                             <svg
                                                                 xmlns="http://www.w3.org/2000/svg"
@@ -906,14 +861,13 @@ const Index = () => {
                                                                 </g>
                                                             </svg>
 
-
-                                                            <span className='text-[17px]' style={{ fontStyle: 'italic' }}>
+                                                            <span className='text-[17px] italic'>
                                                                 Chăm sóc khách hàng mọi lúc, mọi nơi
                                                             </span>
                                                         </div>
                                                     </div>
 
-                                                    <div className="flex justify-between" style={{ marginTop: '35px' }}>
+                                                    <div className="flex justify-between mt-[35px]">
                                                         <div className='flex'>
                                                             <svg
                                                                 xmlns="http://www.w3.org/2000/svg"
@@ -942,15 +896,13 @@ const Index = () => {
                                                                 </g>
                                                             </svg>
 
-
-
-                                                            <span className='text-[17px]' style={{ fontStyle: 'italic' }}>
+                                                            <span className='text-[17px] italic'>
                                                                 Xây dựng trên hạ tầng Dedicated Cloud mạnh mẽ
                                                             </span>
                                                         </div>
                                                     </div>
 
-                                                    <div className="flex justify-between" style={{ marginTop: '35px' }}>
+                                                    <div className="flex justify-between mt-[35px]">
                                                         <div className='flex'>
                                                             <svg
                                                                 xmlns="http://www.w3.org/2000/svg"
@@ -979,13 +931,13 @@ const Index = () => {
                                                                 </g>
                                                             </svg>
 
-                                                            <span className='text-[17px]' style={{ fontStyle: 'italic' }}>
+                                                            <span className='text-[17px] italic' >
                                                                 Tương tác tự nhiên như người thật
                                                             </span>
                                                         </div>
                                                     </div>
 
-                                                    <div className="flex justify-between" style={{ marginTop: '35px' }}>
+                                                    <div className="flex justify-between mt-[35px]">
                                                         <div className='flex'>
                                                             <svg
                                                                 xmlns="http://www.w3.org/2000/svg"
@@ -1014,9 +966,7 @@ const Index = () => {
                                                                 </g>
                                                             </svg>
 
-
-
-                                                            <span className='text-[17px]' style={{ fontStyle: 'italic' }}>
+                                                            <span className='text-[17px] italic'>
                                                                 Tích hợp đa kênh
                                                             </span>
                                                         </div>
@@ -1042,7 +992,7 @@ const Index = () => {
 
                 <div className='grid grid-cols-4 gap-4 grid-flow-row px-[40px]'>
 
-                    <div className='items-center ' style={{ marginRight: '24px', }}>
+                    <div className='items-center mr-[24px]'>
                         <div className='flex flex-col shadow p-[40px] bg-white h-[318px] leading-[25px]' style={{ borderRadius: '40px', }}>
 
                             {/* ảnh svg  */}
@@ -1223,7 +1173,7 @@ const Index = () => {
                         </div>
                     </div>
 
-                    <div className='items-center ' style={{ marginRight: '24px' }}>
+                    <div className='items-center mr-[24px]'>
                         <div className='flex flex-col shadow p-[40px] bg-white h-[318px] leading-[25px] ' style={{ borderRadius: '40px', }}>
 
                             {/* ảnh svg  */}

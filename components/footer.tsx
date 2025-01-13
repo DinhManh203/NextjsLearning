@@ -6,9 +6,9 @@ import Image from 'next/image';
 
 const navbarHeader = () => {
     return (
-        <footer className="bg-white dark:bg-gray-900" style={{ fontFamily: 'Noto Sans' }}>
+        <footer className="bg-white dark:bg-gray-900">
             <div className="mx-auto w-full max-w-screen-xl flex start-0">
-                <div className="grid grid-cols-2 gap-[80px] lg:py-8 md:grid-cols-4" style={{ paddingLeft: '3.75rem', paddingRight: '3.75rem'}}>
+                <div className="grid grid-cols-2 gap-[80px] lg:py-8 md:grid-cols-4 px-[3.75rem] pr">
                     {/* cột 1 */}
                     <div className="">
                         <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
@@ -65,7 +65,7 @@ const navbarHeader = () => {
 
                     {/* cột 2 */}
                     <div >
-                        <h2 className="mb-6 text-gray-900  dark:text-white" style={{ fontFamily: 'Noto Sans', fontSize: '14px', fontWeight: '600' }}>
+                        <h2 className="mb-6 text-gray-900  dark:text-white text-[14px] font-[600]">
                             Giải pháp
                         </h2>
                         <ul className="text-[#646466] dark:text-gray-400 font-medium">
@@ -84,7 +84,7 @@ const navbarHeader = () => {
 
                     {/* cột 3 */}
                     <div className="justify-self-end">
-                        <h2 className="mb-6 text-gray-900 dark:text-white" style={{ fontFamily: 'Noto Sans', fontSize: '14px', fontWeight: '600' }}>
+                        <h2 className="mb-6 text-gray-900 dark:text-white text-[14px] font-[600]">
                             Ứng dụng
                         </h2>
                         <ul className="text-[#646466] dark:text-gray-400 font-medium">
@@ -123,7 +123,7 @@ const navbarHeader = () => {
 
                     {/* cột 4 */}
                     <div className="justify-self-center">
-                        <h2 className="mb-6 text-gray-900 dark:text-white" style={{ fontFamily: 'Noto Sans', fontSize: '14px', fontWeight: '600' }}>
+                        <h2 className="mb-6 text-gray-900 dark:text-white text-[14px] font-[600]">
                             Công ty
                         </h2>
                         <ul className="text-[#646466] dark:text-gray-400 font-medium">
