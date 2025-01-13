@@ -4,19 +4,8 @@ import React from 'react'
 import Image from 'next/image';
 import HomePage from '@/public/home-page.png';
 import Link from 'next/link';
-import { Tabs, TabList, Tab, TabPanel } from 'react-tabs';
 import { useState } from 'react'
 import 'react-tabs/style/react-tabs.css';
-import LogoHeader from '@/public/solution_1.png'
-import Pic1 from '@/public/pic_1.png'
-import Pic2 from '@/public/pic_2.png'
-import Pic3 from '@/public/pic_3.png'
-import Pic4 from '@/public/pic_4.png'
-import BgCard from '@/public/bg_card.png'
-import BgCard2 from '@/public/bg_card_2.png'
-import PicCardLong from '@/public/cardLong.jpg'
-import PicCardLong2 from '@/public/cardLong2.jpg'
-import Psychology from '@/public/cognition.svg'
 
 const Index = () => {
     const [activeTab, setActiveTab] = useState(1);
@@ -25,7 +14,7 @@ const Index = () => {
         <div>
 
             {/* section 1 */}
-            <div style={{ position: 'relative', width: '100vw', height: '968px' }}>
+            <div className='relative w-[100vw] h-[968px]'>
                 {/* Hình ảnh */}
                 <div>
                     <Image
@@ -38,50 +27,33 @@ const Index = () => {
                 </div>
 
                 {/* Nội dung chữ và nút */}
-                <div style={{
-                    position: 'absolute',
-                    top: '75%',
-                    left: '50%',
+                <div className='absolute top-[75%] left-[50%] text-center z-10 text-white' style={{
                     transform: 'translate(-50%, -50%)',
-                    color: 'white',
-                    textAlign: 'center',
-                    zIndex: 10,
                 }}>
                     <div className="items-center flex justify-center">
                         <Image
-                            src={LogoHeader}
+                            src={"/solution_1.png"}
                             alt='LogoHeader'
                             width='232'
                             height='48'
                         />
                     </div>
-                    <h1 style={{ fontSize: '64px', marginBottom: '1rem', fontFamily: 'Noto Sans', fontWeight: '600' }}>Công nghệ AI vượt trội cho doanh nghiệp Việt</h1>
-                    <button style={{
-                        padding: '15px 32px',
-                        fontSize: '17px',
-                        color: 'black',
-                        backgroundColor: '#fff',
-                        border: 'none',
-                        borderRadius: '100px',
-                        cursor: 'pointer',
-                        fontFamily: 'Noto Sans',
-                        fontWeight: '600'
-                    }}>
+                    <h1 className='text-[64px] mb-[1rem] font-[600]'>Công nghệ AI vượt trội cho doanh nghiệp Việt</h1>
+                    <button className='px-[8px] py-[16px] text-center text-[17px] w-[185px] text-black bg-white border-none rounded-full cursor-pointer font-[600]'>
                         <Link href="/digital_human">
                             Tìm hiểu thêm
                         </Link>
-
                     </button>
                 </div>
             </div>
 
             {/* section 2 */}
-            <div style={{ padding: '120px 142px', }}>
-                <div className='flex flex-col justify-center items-center' style={{ marginBottom: '5rem', }}>
-                    <h3 style={{ fontSize: '48px', fontFamily: 'Noto Sans', fontWeight: '600' }}> Công nghệ và lợi thế cạnh tranh</h3>
-                    <span className='' style={{ fontSize: '24px', fontFamily: 'Noto Sans', fontWeight: '500', color: '#646466' }}>MediaX tạo sự khác biệt trong Chuyển Đổi Số</span>
-                    <span className='' style={{ fontSize: '24px', fontFamily: 'Noto Sans', fontWeight: '500', color: '#646466' }}>bằng các giải pháp AI tiên tiến, giúp</span>
-                    <span className='' style={{ fontSize: '24px', fontFamily: 'Noto Sans', fontWeight: '500', color: '#646466' }}>Nghiệp đột phá và vượt trội.</span>
+            <div className='px-[120px] py-[142px]'>
+                <div className='flex flex-col justify-center items-center mb-[5rem]'>
+                    <h3 className='text-[48px] font-[600]'> Công nghệ và lợi thế cạnh tranh</h3>
+                    <span className='text-[24px] font-[500] text-[#646466]'>MediaX tạo sự khác biệt trong Chuyển Đổi Số</span>
+                    <span className='text-[24px] font-[500] text-[#646466]'>bằng các giải pháp AI tiên tiến, giúp</span>
+                    <span className='text-[24px] font-[500] text-[#646466]'>Nghiệp đột phá và vượt trội.</span>
                 </div>
 
 
@@ -94,7 +66,7 @@ const Index = () => {
                             <div>
                                 <div>
                                     <Image
-                                        src={Pic1}
+                                        src={"/pic_1.png"}
                                         alt="Pic1"
                                         width='565'
                                         height='466'
@@ -122,17 +94,15 @@ const Index = () => {
                                         </defs>
                                     </svg>
                                     <div className='flex flex-col justify-center items-center'>
-                                        <h3 style={{ fontSize: '32px', fontFamily: 'Noto Sans', fontWeight: '600', color: '#131314' }}>Công nghệ tiên tiến</h3>
-                                        <span style={{ fontSize: '17px', fontFamily: 'Noto Sans', fontWeight: '500', color: '#646466' }}>MediaX ứng dụng các thuật toán AI hiện đại nhất </span>
-                                        <span style={{ fontSize: '17px', fontFamily: 'Noto Sans', fontWeight: '500', color: '#646466' }}>và mô hình học máy tiên tiến, cung cấp các giải</span>
-                                        <span style={{ fontSize: '17px', fontFamily: 'Noto Sans', fontWeight: '500', color: '#646466' }}>pháp có độ chính xác cao và hiệu suất vượt trội.</span>
+                                        <h3 className='text-[32px] font-[600] text-[#131314]'>Công nghệ tiên tiến</h3>
+                                        <span className='text-[17px] font-[500] text-[#646466]' >MediaX ứng dụng các thuật toán AI hiện đại nhất </span>
+                                        <span className='text-[17px] font-[500] text-[#646466]'>và mô hình học máy tiên tiến, cung cấp các giải</span>
+                                        <span className='text-[17px] font-[500] text-[#646466]'>pháp có độ chính xác cao và hiệu suất vượt trội.</span>
                                     </div>
                                 </div>
                             </div>
-
                         </div>
                     </div>
-
                 </div>
 
                 <div className='mb-10'>
@@ -140,7 +110,7 @@ const Index = () => {
                         <div className='flex flex-row grid grid-cols-2 justify-center items-center'>
 
                             {/* noi dung  */}
-                            <div style={{ padding: '133px 83px', }}>
+                            <div className='px-[133px] py-[83px]' style={{ padding: '133px 83px', }}>
                                 <div className='flex flex-col justify-center items-center'>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="44" height="48" viewBox="0 0 44 48" fill="none">
                                         <g clipPath="url(#clip0_613_147144)">
@@ -165,10 +135,10 @@ const Index = () => {
                                         </defs>
                                     </svg>
                                     <div className='flex flex-col justify-center items-center'>
-                                        <h3 style={{ fontSize: '32px', fontFamily: 'Noto Sans', fontWeight: '600', color: '#131314' }}>Khả năng tích hợp linh hoạt</h3>
-                                        <span style={{ fontSize: '17px', fontFamily: 'Noto Sans', fontWeight: '500', color: '#646466' }}>MediaX giúp doanh nghiệp dễ dàng tích hợp các giải </span>
-                                        <span style={{ fontSize: '17px', fontFamily: 'Noto Sans', fontWeight: '500', color: '#646466' }}>pháp AI vào hệ thống hiện có, đảm bảo quá trình vận</span>
-                                        <span style={{ fontSize: '17px', fontFamily: 'Noto Sans', fontWeight: '500', color: '#646466' }}>hành không bị gián đoạn và tối ưu hóa hiệu quả.</span>
+                                        <h3 className='text-[32px] font-[600] text-[#131314]'>Khả năng tích hợp linh hoạt</h3>
+                                        <span className='text-[17px] font-[500] text-[#646466]'>MediaX giúp doanh nghiệp dễ dàng tích hợp các giải </span>
+                                        <span className='text-[17px] font-[500] text-[#646466]'>pháp AI vào hệ thống hiện có, đảm bảo quá trình vận</span>
+                                        <span className='text-[17px] font-[500] text-[#646466]'>hành không bị gián đoạn và tối ưu hóa hiệu quả.</span>
                                     </div>
                                 </div>
                             </div>
@@ -177,8 +147,8 @@ const Index = () => {
                             <div>
                                 <div>
                                     <Image
-                                        src={Pic2}
-                                        alt="Pic1"
+                                        src={"/pic_2.png"}
+                                        alt="Pic2"
                                         width='565'
                                         height='466'
                                     />
@@ -198,8 +168,8 @@ const Index = () => {
                             <div>
                                 <div>
                                     <Image
-                                        src={Pic3}
-                                        alt="Pic1"
+                                        src={"/pic_3.png"}
+                                        alt="Pic3"
                                         width='565'
                                         height='466'
                                     />
@@ -226,11 +196,11 @@ const Index = () => {
                                         </defs>
                                     </svg>
                                     <div className='flex flex-col justify-center items-center'>
-                                        <h3 style={{ fontSize: '32px', fontFamily: 'Noto Sans', fontWeight: '600', color: '#131314' }}>Giải pháp AI tùy chỉnh</h3>
-                                        <span style={{ fontSize: '17px', fontFamily: 'Noto Sans', fontWeight: '500', color: '#646466' }}>Các giải pháp AI của MediaX được thiết kế tùy  </span>
-                                        <span style={{ fontSize: '17px', fontFamily: 'Noto Sans', fontWeight: '500', color: '#646466' }}>chỉnh theo nhu cầu cụ thể của từng doanh </span>
-                                        <span style={{ fontSize: '17px', fontFamily: 'Noto Sans', fontWeight: '500', color: '#646466' }}>nghiệp, đảm bảo kết quả phù hợp nhất với mục</span>
-                                        <span style={{ fontSize: '17px', fontFamily: 'Noto Sans', fontWeight: '500', color: '#646466' }}>tiêu kinh doanh.</span>
+                                        <h3 className='text-[32px] font-[600] text-[#131314]'>Giải pháp AI tùy chỉnh</h3>
+                                        <span className='text-[17px] font-[500] text-[#646466]'>Các giải pháp AI của MediaX được thiết kế tùy  </span>
+                                        <span className='text-[17px] font-[500] text-[#646466]'>chỉnh theo nhu cầu cụ thể của từng doanh </span>
+                                        <span className='text-[17px] font-[500] text-[#646466]'>nghiệp, đảm bảo kết quả phù hợp nhất với mục</span>
+                                        <span className='text-[17px] font-[500] text-[#646466]'>tiêu kinh doanh.</span>
                                     </div>
                                 </div>
                             </div>
@@ -264,10 +234,10 @@ const Index = () => {
                                         </defs>
                                     </svg>
                                     <div className='flex flex-col justify-center items-center'>
-                                        <h3 style={{ fontSize: '32px', fontFamily: 'Noto Sans', fontWeight: '600', color: '#131314' }}>Chuyên môn và kinh nghiệm</h3>
-                                        <span style={{ fontSize: '17px', fontFamily: 'Noto Sans', fontWeight: '500', color: '#646466' }}>Với đội ngũ chuyên gia giàu kinh nghiệm, MediaX  </span>
-                                        <span style={{ fontSize: '17px', fontFamily: 'Noto Sans', fontWeight: '500', color: '#646466' }}>cung cấp dịch vụ tư vấn chuyên sâu, hỗ trợ toàn diện </span>
-                                        <span style={{ fontSize: '17px', fontFamily: 'Noto Sans', fontWeight: '500', color: '#646466' }}>cho doanh nghiệp trong hành trình chuyển đổi số.</span>
+                                        <h3 className='text-[32px] font-[600] text-[#131314]'>Chuyên môn và kinh nghiệm</h3>
+                                        <span className='text-[17px] font-[500] text-[#646466]'>Với đội ngũ chuyên gia giàu kinh nghiệm, MediaX  </span>
+                                        <span className='text-[17px] font-[500] text-[#646466]'>cung cấp dịch vụ tư vấn chuyên sâu, hỗ trợ toàn diện </span>
+                                        <span className='text-[17px] font-[500] text-[#646466]'>cho doanh nghiệp trong hành trình chuyển đổi số.</span>
                                     </div>
                                 </div>
                             </div>
@@ -276,29 +246,24 @@ const Index = () => {
                             <div>
                                 <div>
                                     <Image
-                                        src={Pic4}
-                                        alt="Pic1"
+                                        src={"/pic_4.png"}
+                                        alt="Pic4"
                                         width='565'
                                         height='466'
                                     />
                                 </div>
                             </div>
-
                         </div>
                     </div>
-
                 </div>
-
-
-
             </div>
 
             {/* section 3 */}
-            <div style={{ backgroundColor: '#101011', padding: '120px 142px', }}>
-                <div className='flex flex-col justify-center items-center text-center' style={{ marginBottom: '5rem', padding: '24px 270px', }}>
-                    <h3 className='' style={{ fontSize: '48px', fontFamily: 'Noto Sans', fontWeight: '600', color: '#fff' }}> Giải pháp</h3>
-                    <h3 className='' style={{ fontSize: '48px', fontFamily: 'Noto Sans', fontWeight: '600', color: '#fff' }}> chuyển đổi số toàn diện</h3>
-                    <span className='' style={{ fontSize: '24px', fontFamily: 'Noto Sans', fontWeight: '500', color: '#A0A0BD' }}>MediaX cung cấp các dịch vụ tư vấn tùy chỉnh, kết hợp giữa chiến lược kinh doanh và trí tuệ nhân tạo (AI), dựa trên đặc điểm và thế mạnh của từng khách hàng.</span>
+            <div className='bg-[#101011] px-[120px] py-[142px]'>
+                <div className='flex flex-col justify-center items-center text-center mb-[5rem] px-[24px] pt-[270px]'>
+                    <h3 className='text-[48px] font-[600] text-white'> Giải pháp</h3>
+                    <h3 className='text-[48px] font-[600] text-white'> chuyển đổi số toàn diện</h3>
+                    <span className='text-[24px] font-[500] text-[#A0A0BD] px-[270px]'>MediaX cung cấp các dịch vụ tư vấn tùy chỉnh, kết hợp giữa chiến lược kinh doanh và trí tuệ nhân tạo (AI), dựa trên đặc điểm và thế mạnh của từng khách hàng.</span>
                 </div>
 
                 {/* Tabs content  */}
@@ -308,32 +273,30 @@ const Index = () => {
                         {/* Tabs Header */}
                         <div className="flex gap-[18px]">
                             <button
-                                className={`text-lg hover:bg-white hover:text-black ${activeTab === 1 ? " text-white" : " text-white"}`}
+                                className={`text-[15px] font-[600] px-[8px] py-[12px] hover:bg-white hover:text-black ${activeTab === 1 ? " text-white" : " text-white"}`}
                                 onClick={() => setActiveTab(1)}
-                                style={{ borderRadius: '100px', fontFamily: 'Noto Sans', fontSize: '15px', fontWeight: '600', padding: '8px 24px' }}
+                                style={{ borderRadius: '100px', }}
                             >
                                 Đội ngũ nhân sự số
                             </button>
                             <button
-                                className={`py-2 px-4 text-lg hover:bg-white hover:text-black ${activeTab === 2 ? " text-white" : " text-white"}`}
+                                className={`px-[8px] py-[12px] text-[15px] font-[600] hover:bg-white hover:text-black ${activeTab === 2 ? " text-white" : " text-white"}`}
                                 onClick={() => setActiveTab(2)}
-                                style={{ borderRadius: '100px', fontFamily: 'Noto Sans', fontSize: '15px', fontWeight: '600', padding: '8px 24px' }}
+                                style={{ borderRadius: '100px', }}
                             >
                                 Nâng cao trải nghiệm khách hàng
                             </button>
                         </div>
 
                         <div className='p-5 flex flex-col justify-center text-center'>
-                            <span className='text-white' style={{ fontSize: '20px', fontFamily: 'Noto Sans', fontWeight: '500', lineHeight: '25px', color: '#fff' }}>
+                            <span className='text-white text-[20px] font-[500] leading-[25px]'>
                                 Tối ưu sức mạnh hiệu suất nhờ kết hợp nguồn lực con người và trí tuệ
                             </span>
-                            <span className='text-white' style={{ fontSize: '20px', fontFamily: 'Noto Sans', fontWeight: '500', lineHeight: '25px', color: '#fff' }}>
+                            <span className='text-white text-[20px] font-[500] leading-[25px]'>
                                 nhân tạo
                             </span>
 
-                            <div className='text-center flex justify-center items-center' style={{
-                                marginTop: '32px',
-                            }}>
+                            <div className='text-center flex justify-center items-center mt-[32px]'>
                                 <div className='flex '>
                                     <a href="#" className="flex justify-center items-center" style={{
                                         fontSize: '15px',
@@ -364,22 +327,13 @@ const Index = () => {
                                 <div className="p-4 text-white">
 
                                     <div className="flex flex-row">
-                                        <div className="flex flex-col justify-around" style={{
-                                            marginRight: '24px'
-                                        }}>
-                                            <div style={{
-                                                height: '340px',
+                                        <div className="flex flex-col justify-around mr-[24px]">
+                                            <div className='flex justify-center relative h-[340px] bg-[#171824] border-[2px] border-[#1F2634] overflow-hidden' style={{
                                                 borderRadius: '40px',
-                                                border: '2px solid #1F2634',
-                                                background: '#171824',
-                                                display: 'flex',
-                                                justifyContent: 'center',
-                                                overflow: 'hidden',
-                                                position: 'relative'
                                             }}>
                                                 <div>
                                                     <Image
-                                                        src={BgCard}
+                                                        src={"/bg_card.png"}
                                                         alt='BgCard'
                                                         width={566}
                                                         height={340}
@@ -389,37 +343,18 @@ const Index = () => {
                                                             marginTop: '65px'
                                                         }}
                                                     />
-                                                    <span className='text-white' style={{
-                                                        position: 'absolute',
-                                                        top: '0',
-                                                        padding: '40px',
-                                                        fontSize: '17px',
-                                                        fontWeight: 500,
-                                                        fontFamily: "Noto Sans",
-                                                    }}>
+                                                    <span className='text-white absolute p-[40px] text-[17px] font-[500] top-0'>
                                                         Xây dựng đội ngũ nhân lực số tập trung vào việc doanh nghiệp ươm mầm và duy trì văn hóa số, phát triển kỹ năng nhân viên, tăng cường gắn kết, áp dụng chính sách khuyến khích sự tham gia và thúc đẩy đổi mới sáng tạo giữa các phòng ban
                                                     </span>
                                                 </div>
 
                                             </div>
 
-                                            <div style={{
-                                                height: '393px',
+                                            <div className='relative mt-[24px] bg-[#171824] h-[393px] border-[2px] border-[#1F2634]' style={{
                                                 borderRadius: '40px',
-                                                border: '2px solid #1F2634',
-                                                background: '#171824',
-                                                position: 'relative',
-                                                marginTop: '24px'
                                             }}>
                                                 <div>
-                                                    <span className='text-white' style={{
-                                                        position: 'absolute',
-                                                        top: '0',
-                                                        padding: '40px',
-                                                        fontSize: '17px',
-                                                        fontWeight: 500,
-                                                        fontFamily: "Noto Sans",
-                                                    }}>
+                                                    <span className='text-white absolute top-0 p-[40px] text-[17px] font-[500]'>
                                                         Xây dựng đội ngũ nhân lực số tập trung vào việc doanh nghiệp ươm mầm và duy trì văn hóa số, phát triển kỹ năng nhân viên, tăng cường gắn kết, áp dụng chính sách khuyến khích sự tham gia và thúc đẩy đổi mới sáng tạo giữa các phòng ban
                                                     </span>
                                                 </div>
@@ -428,7 +363,7 @@ const Index = () => {
                                                         padding: '200px 40px 40px 40px',
                                                     }}>
                                                     {/* dong 1 */}
-                                                    <div className="flex justify-between" style={{ paddingBottom: '16px', }}>
+                                                    <div className="flex justify-between pb-[16px]">
                                                         <div className='flex'>
                                                             <svg
                                                                 xmlns="http://www.w3.org/2000/svg"
@@ -468,10 +403,10 @@ const Index = () => {
                                                         </svg>
                                                     </div>
 
-                                                    <div style={{ border: '1px solid #383840', }}></div>
+                                                    <div className='border-[1px] border-[#383840]'></div>
 
                                                     {/* dong 2 */}
-                                                    <div className="flex justify-between" style={{ paddingBottom: '16px', paddingTop: '16px' }}>
+                                                    <div className="flex justify-between pb-[16px] pt-[16px]">
                                                         <div className='flex'>
                                                             <svg
                                                                 xmlns="http://www.w3.org/2000/svg"
@@ -509,9 +444,9 @@ const Index = () => {
                                                         </svg>
                                                     </div>
 
-                                                    <div style={{ border: '1px solid #383840', }}></div>
+                                                    <div className='border-[1px] border-[#383840]'></div>
                                                     {/* dong 3 */}
-                                                    <div className="flex justify-between" style={{ paddingBottom: '16px', paddingTop: '16px' }}>
+                                                    <div className="flex justify-between pb-[16px] pt-[16px]">
                                                         <div className='flex'>
                                                             <svg
                                                                 xmlns="http://www.w3.org/2000/svg"
@@ -554,39 +489,24 @@ const Index = () => {
                                         </div>
 
                                         {/* Cot dai*/}
-                                        <div className='' style={{
-                                            display: 'flex',
-                                            justifyContent: 'center',
-                                            overflow: 'hidden',
-                                            position: 'relative'
-                                        }}>
-                                            <div style={{
-                                                height: '757px',
+                                        <div className='flex justify-center overflow-hidden relative'>
+                                            <div className='h-[757px] bg-[#171824] border-[2px] border-[#1F2634]' style={{
                                                 borderRadius: '40px',
-                                                border: '2px solid #1F2634',
-                                                background: '#171824',
                                             }}>
                                                 <Image
-                                                    src={PicCardLong}
-                                                    alt='BgCard'
+                                                    src={"/cardLong.jpg"}
+                                                    alt='PicCardLong'
                                                     width={566}
+                                                    height={757}
                                                     style={{
                                                         borderRadius: '40px 40px 0px 0px',
                                                     }}
                                                 />
-                                                <div style={{
-                                                    position: 'absolute',
-                                                    top: '30%',
-                                                    padding: '90px 40px',
-                                                }}>
-                                                    <span className='text-white' style={{
-                                                        fontSize: '17px',
-                                                        fontWeight: 500,
-                                                        fontFamily: "Noto Sans",
-                                                    }}>
+                                                <div className='absolute top-[30%] px-[40px] py-[90px]'>
+                                                    <span className='text-white font-[500]'>
                                                         MediaX cung cấp bộ giải pháp AI hàng đầu thị trường về tăng cường trải nghiệm khách hàng
                                                     </span>
-                                                    <div className="flex justify-between" style={{ marginTop: '40px' }}>
+                                                    <div className="flex justify-between mt-[40px]">
                                                         <div className='flex'>
                                                             <svg style={{ marginRight: '16px' }} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                                                                 <mask id="mask0_613_147218" style={{ maskType: 'alpha' }} maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
@@ -603,7 +523,7 @@ const Index = () => {
                                                         </div>
                                                     </div>
 
-                                                    <div className="flex justify-between" style={{ marginTop: '35px' }}>
+                                                    <div className="flex justify-between mt-[35px]">
                                                         <div className='flex'>
                                                             <svg style={{ marginRight: '16px' }}
                                                                 xmlns="http://www.w3.org/2000/svg"
@@ -638,14 +558,14 @@ const Index = () => {
                                                         </div>
                                                     </div>
 
-                                                    <div className="flex justify-between" style={{ marginTop: '35px' }}>
+                                                    <div className="flex justify-between mt-[35px]">
                                                         <div className='flex'>
                                                             <Image
-                                                                style={{ marginRight: '16px' }}
-                                                                src={Psychology}
+                                                                src={"/cognition.svg"}
                                                                 alt='Icon'
                                                                 width={24}
                                                                 height={24}
+                                                                className='mr-[16px]'
                                                             />
                                                             <span className='text-[17px]' style={{ fontStyle: 'italic' }}>
                                                                 Nâng cao năng lực của đội ngũ nhân viên doanh nghiệp thông qua phương thức đào tạo mới
@@ -653,7 +573,7 @@ const Index = () => {
                                                         </div>
                                                     </div>
 
-                                                    <div className="flex justify-between" style={{ marginTop: '35px' }}>
+                                                    <div className="flex justify-between mt-[35px]">
                                                         <div className='flex'>
                                                             <svg style={{ marginRight: '16px' }}
                                                                 xmlns="http://www.w3.org/2000/svg"
@@ -681,14 +601,13 @@ const Index = () => {
                                                                 </g>
                                                             </svg>
 
-
                                                             <span className='text-[17px]' style={{ fontStyle: 'italic' }}>
                                                                 Nền tảng quản lý tập trung toàn bộ tri thức doanh nghiệp
                                                             </span>
                                                         </div>
                                                     </div>
 
-                                                    <div className="flex justify-between" style={{ marginTop: '35px' }}>
+                                                    <div className="flex justify-between mt-[35px]">
                                                         <div className='flex'>
                                                             <svg style={{ marginRight: '16px' }}
                                                                 xmlns="http://www.w3.org/2000/svg"
@@ -715,7 +634,6 @@ const Index = () => {
                                                                     />
                                                                 </g>
                                                             </svg>
-
 
                                                             <span className='text-[17px]' style={{ fontStyle: 'italic' }}>
                                                                 Dễ dàng triển khai và tích hợp với các hệ thống quản lý nội bộ
@@ -750,7 +668,7 @@ const Index = () => {
                                             }}>
                                                 <div>
                                                     <Image
-                                                        src={BgCard2}
+                                                        src={"/bg_card_2.png"}
                                                         alt='BgCard2'
                                                         width={566}
                                                         height={340}
@@ -939,9 +857,10 @@ const Index = () => {
                                                 background: '#171824',
                                             }}>
                                                 <Image
-                                                    src={PicCardLong2}
-                                                    alt='BgCard'
+                                                    src={"/cardLong2.jpg"}
+                                                    alt='PicCardLong2'
                                                     width={566}
+                                                    height={757}
                                                     style={{
                                                         borderRadius: '40px 40px 0px 0px',
                                                     }}
@@ -1115,16 +1034,16 @@ const Index = () => {
             </div>
 
             {/* section 4 */}
-            <div className='bg-white' style={{ padding: '120px 142px' }}>
-                <div className='flex flex-col justify-center items-center' style={{ marginBottom: '3rem', }}>
-                    <h3 style={{ fontSize: '48px', fontFamily: 'Noto Sans', fontWeight: '600' }}>Khai phá giá trị xã hội và kinh</h3>
-                    <h3 style={{ fontSize: '48px', fontFamily: 'Noto Sans', fontWeight: '600' }}>tế bằng AI</h3>
+            <div className='bg-white px-[120px] py-[142px]'>
+                <div className='flex flex-col justify-center items-center mb-[3rem]'>
+                    <h3 className='text-[48px] font-[600]'>Khai phá giá trị xã hội và kinh</h3>
+                    <h3 className='text-[48px] font-[600]'>tế bằng AI</h3>
                 </div>
 
-                <div className='grid grid-cols-4 gap-4 grid-flow-row' style={{ paddingLeft: '40px', paddingRight: '40px' }}>
+                <div className='grid grid-cols-4 gap-4 grid-flow-row px-[40px]'>
 
                     <div className='items-center ' style={{ marginRight: '24px', }}>
-                        <div className='flex flex-col shadow' style={{ padding: '40px', backgroundColor: '#fff', borderRadius: '40px', height: '318px', lineHeight: '25px', letterSpacing: '-0.25%' }}>
+                        <div className='flex flex-col shadow p-[40px] bg-white h-[318px] leading-[25px]' style={{ borderRadius: '40px', }}>
 
                             {/* ảnh svg  */}
                             <div>
@@ -1146,10 +1065,8 @@ const Index = () => {
                                 </svg>
                             </div>
                             {/* nội dung  */}
-                            <div className='' style={{ marginTop: '24px' }}>
-                                <span
-                                    className="text-[20px] font-medium font-[Noto Sans]"
-                                >
+                            <div className='mt-[24px]'>
+                                <span className="text-[20px] font-medium font-[Noto Sans]">
                                     Các giải pháp AI giúp doanh nghiệp tự động hóa và tối ưu nguồn lực,{' '}
                                     <span
                                         style={{
@@ -1166,8 +1083,8 @@ const Index = () => {
                         </div>
                     </div>
 
-                    <div className='items-center' style={{ marginRight: '24px', }}>
-                        <div className='flex flex-col shadow' style={{ padding: '40px', backgroundColor: '#fff', borderRadius: '40px', height: '318px', lineHeight: '25px', letterSpacing: '-0.25%' }}>
+                    <div className='items-center mr-[24px]'>
+                        <div className='flex flex-col shadow p-[40px] bg-white h-[318px] leading-[25px]' style={{ borderRadius: '40px', }}>
 
                             {/* ảnh svg  */}
                             <div>
@@ -1214,7 +1131,7 @@ const Index = () => {
 
                             </div>
                             {/* nội dung  */}
-                            <div className='' style={{ marginTop: '24px' }}>
+                            <div className='mt-[24px]'>
                                 <span
                                     className="text-[20px] font-medium font-[Noto Sans]"
                                     style={{ letterSpacing: '-0.05px' }}
@@ -1237,8 +1154,8 @@ const Index = () => {
                         </div>
                     </div>
 
-                    <div className='items-center' style={{ marginRight: '24px' }}>
-                        <div className='flex flex-col shadow' style={{ padding: '40px', backgroundColor: '#fff', borderRadius: '40px', height: '318px', lineHeight: '25px', letterSpacing: '-0.25%' }}>
+                    <div className='items-center mr-[24px]'>
+                        <div className='flex flex-col shadow p-[40px] bg-white h-[318px] leading-[25px]' style={{ borderRadius: '40px', }}>
 
                             {/* ảnh svg  */}
                             <div>
@@ -1285,7 +1202,7 @@ const Index = () => {
 
                             </div>
                             {/* nội dung  */}
-                            <div className='' style={{ marginTop: '24px' }}>
+                            <div className='mt-[24px]'>
                                 <span
                                     className="text-[20px] font-medium font-[Noto Sans]"
                                 >
@@ -1307,7 +1224,7 @@ const Index = () => {
                     </div>
 
                     <div className='items-center ' style={{ marginRight: '24px' }}>
-                        <div className='flex flex-col shadow ' style={{ padding: '40px', backgroundColor: '#fff', borderRadius: '40px', height: '318px', lineHeight: '25px', letterSpacing: '-0.25%' }}>
+                        <div className='flex flex-col shadow p-[40px] bg-white h-[318px] leading-[25px] ' style={{ borderRadius: '40px', }}>
 
                             {/* ảnh svg  */}
                             <div>
@@ -1354,7 +1271,7 @@ const Index = () => {
 
                             </div>
                             {/* nội dung  */}
-                            <div className='' style={{ marginTop: '24px' }}>
+                            <div className='mt-[24px]'>
                                 <span
                                     className="text-[20px] font-medium font-[Noto Sans]"
                                 >
@@ -1374,6 +1291,7 @@ const Index = () => {
                             </div>
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>
