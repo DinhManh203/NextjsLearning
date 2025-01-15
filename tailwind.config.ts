@@ -13,7 +13,23 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      screens: {
+        xsm: '300px',
+        sm: '576px',
+        md: '960px',
+        lg: '1440px',
+      },
     },
+    fontFamily: {
+      sans: [
+        '"SF Pro", sans-serif',
+        {
+          fontFeatureSettings: '"cv11", "ss01"',
+          fontVariationSettings: '"opsz" 32',
+        },
+      ],
+    },
+    
   },
   plugins: [
     require('flowbite/plugin')

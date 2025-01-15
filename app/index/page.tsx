@@ -260,16 +260,16 @@ const Index = () => {
 
             {/* section 3 */}
             <div className='bg-[#101011] px-[120px] py-[142px]'>
-                <div className='flex flex-col justify-center items-center text-center mb-[5rem] px-[24px] pt-[270px]'>
+                <div className='flex flex-col justify-center items-center text-center mb-[5rem] px-[24px]'>
                     <h3 className='text-[48px] font-[600] text-white'> Giải pháp</h3>
                     <h3 className='text-[48px] font-[600] text-white'> chuyển đổi số toàn diện</h3>
                     <span className='text-[24px] font-[500] text-[#A0A0BD] px-[270px]'>MediaX cung cấp các dịch vụ tư vấn tùy chỉnh, kết hợp giữa chiến lược kinh doanh và trí tuệ nhân tạo (AI), dựa trên đặc điểm và thế mạnh của từng khách hàng.</span>
                 </div>
 
                 {/* Tabs content  */}
-                <div className="flex flex-col items-center mt-10">
+                <div className="flex flex-col items-center mt-5">
                     {/* Tabs Header */}
-                    <div className="flex flex-col items-center mt-10">
+                    <div className="flex flex-col items-center mt-5">
                         {/* Tabs Header */}
                         <div className="flex gap-[18px]">
                             <button
