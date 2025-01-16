@@ -7,8 +7,8 @@ import Image from 'next/image';
 const navbarHeader = () => {
     return (
         <footer className="bg-white dark:bg-gray-900">
-            <div className="mx-auto w-full max-w-screen-xl flex start-0 lg:block sm:hidden">
-                <div className="lg:grid lg:grid-cols-2 md:grid md:grid-col gap-[80px] lg:py-8 md:grid-cols-4 px-[3.75rem] pr">
+            <div className="mx-auto w-full max-w-screen-xl flex start-0 lg:block md:block sm:hidden xsm:hidden">
+                <div className="lg:grid md:grid gap-[80px] lg:py-8 md:grid-cols-4 px-[3.75rem] pr">
                     {/* cột 1 */}
                     <div className="">
                         <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
@@ -142,7 +142,7 @@ const navbarHeader = () => {
                 </div>
             </div>
 
-            <div className="mx-auto w-full max-w-screen-xl flex start-0 lg:hidden md:block">
+            <div className="mx-auto w-full max-w-screen-xl flex start-0 lg:hidden md:hidden sm:block xsm:block">
                 <div className="lg:grid lg:grid-cols-2 md:grid md:grid-col gap-[80px] lg:py-8 md:grid-cols-4 px-[3.75rem] pr">
                     {/* cột 1 */}
                     <div className="lg:justify-self-center">
@@ -170,25 +170,6 @@ const navbarHeader = () => {
                     </div>
 
                     {/* cột 2 */}
-                    <div className='mt-5'>
-                        <h2 className="text-gray-900  dark:text-white text-[14px] font-[600]">
-                            Giải pháp
-                        </h2>
-                        <ul className="text-[#646466] dark:text-gray-400 font-medium">
-                            <li className="mb-2">
-                                <a href="#" className="text-[14px]">
-                                    Đội ngũ nhân sự số
-                                </a>
-                            </li>
-                            <li className="mb-2">
-                                <a href="#" className="text-[14px]">
-                                    Nâng cao trải nghiệm khách hàng
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-
-                    {/* cột 3 */}
                     <div className="lg:justify-self-end mt-5">
                         <h2 className="text-gray-900 dark:text-white text-[14px] font-[600]">
                             Ứng dụng
@@ -227,9 +208,48 @@ const navbarHeader = () => {
                         </ul>
                     </div>
 
+                    {/* cột 3 */}
+                    <div className='mt-5'>
+                        <h2 className="text-gray-900  dark:text-white text-[14px] font-[600]">
+                            Giải pháp
+                        </h2>
+                        <ul className="text-[#646466] dark:text-gray-400 font-medium">
+                            <li className="mb-2">
+                                <a href="#" className="text-[14px]">
+                                    Đội ngũ nhân sự số
+                                </a>
+                            </li>
+                            <li className="mb-2">
+                                <a href="#" className="text-[14px]">
+                                    Nâng cao trải nghiệm khách hàng
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    {/* kẻ ngang */}
+                    <div className='border-[1px] border-[#646466] mt-5 mb-5 lg:hidden md:hidden'>
+
+                    </div>
+
                     {/* cột 4 */}
                     <div className="">
                         <ul className="text-dark-500 dark:text-gray-400 font-medium">
+                            <li className="mb-2">
+                                <p className="font-bold" >
+                                    Địa chỉ: <span className="font-normal text-[14px]">Tầng 5 V1 The Terra An Hưng - La Khê - Hà Đông - Hà Nội</span>
+                                </p>
+                            </li>
+                            <li className="mb-2">
+                                <p className="font-bold">
+                                    Hotline: <span className="font-normal text-[14px]">0343 488 603</span>
+                                </p>
+                            </li>
+                            <li className="mb-2">
+                                <p className="font-bold">
+                                    Email: <span className="font-normal text-[14px]">hello@mediax.com.vn</span>
+                                </p>
+                            </li>
                             <li className="mb-4 flex flex-row">
                                 <a href="#" className="hover:underline">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -256,21 +276,6 @@ const navbarHeader = () => {
                                         <path d="M13.7734 6C12.8066 6 11.8794 6.3204 11.1958 6.89072C10.5121 7.46103 10.1281 8.23455 10.1281 9.0411V10.7342H8.17734C8.07961 10.7342 8 10.8 8 10.8822V13.1178C8 13.1993 8.07882 13.2658 8.17734 13.2658H10.1281V17.8521C10.1281 17.9336 10.2069 18 10.3054 18H12.9852C13.083 18 13.1626 17.9342 13.1626 17.8521V13.2658H15.1306C15.2118 13.2658 15.2828 13.2197 15.3025 13.154L15.9724 10.9184C15.979 10.8965 15.9795 10.8738 15.974 10.8517C15.9684 10.8297 15.957 10.8091 15.9404 10.7913C15.9238 10.7736 15.9026 10.7592 15.8784 10.7493C15.8542 10.7394 15.8276 10.7343 15.8006 10.7342H13.1626V9.0411C13.1626 8.97418 13.1784 8.90791 13.2091 8.84608C13.2398 8.78426 13.2847 8.72808 13.3415 8.68076C13.3982 8.63344 13.4655 8.59591 13.5396 8.5703C13.6138 8.54469 13.6932 8.53151 13.7734 8.53151H15.8227C15.9204 8.53151 16 8.46575 16 8.38356V6.14795C16 6.06641 15.9212 6 15.8227 6H13.7734Z" fill="#A3A3A3" />
                                     </svg>
                                 </a>
-                            </li>
-                            <li className="mb-2">
-                                <p className="font-bold" >
-                                    Địa chỉ: <span className="font-normal text-[14px]">Tầng 5 V1 The Terra An Hưng - La Khê - Hà Đông - Hà Nội</span>
-                                </p>
-                            </li>
-                            <li className="mb-2">
-                                <p className="font-bold">
-                                    Hotline: <span className="font-normal text-[14px]">0343 488 603</span>
-                                </p>
-                            </li>
-                            <li className="mb-2">
-                                <p className="font-bold">
-                                    Email: <span className="font-normal text-[14px]">hello@mediax.com.vn</span>
-                                </p>
                             </li>
                         </ul>
                     </div>
