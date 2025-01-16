@@ -119,7 +119,7 @@ const Page = () => {
                                                 alt='Alert Icon'
                                                 width={16}
                                                 height={16}
-                                                className='mb-0.5'
+                                                className='text-cnter mb-0.5 mr-2'
                                             />
                                             {errors.email}</p>}
                                 </div>
@@ -153,7 +153,7 @@ const Page = () => {
                                                 alt='Alert Icon'
                                                 width={16}
                                                 height={16}
-                                                className='text-center mb-0.5'
+                                                className='text-center mb-0.5 mr-2'
                                             />
                                             {errors.password}</p>}
                                 </div>
